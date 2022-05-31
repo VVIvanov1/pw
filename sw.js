@@ -1,4 +1,3 @@
-self.addEventListener("push", (e) => {
-  console.log(e);
-  e.waitUntil(self.registration.showNotification("test message", {}));
+self.addEventListener("push", () => {
+  self.registration.showNotification("Hello world!", options);
 });
